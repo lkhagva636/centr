@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="col ">
+            <div class="navbar">
+                <a href="index.html"><img src="./stat/image/new-logo-priuscenter.png" style="width: 160px; height: 50px; padding-left: 15px;"> </a>
+                <a href="0.html" style= " font-size: 16px; margin-left: 200px; padding-top: 35px;">Байгуулгын тухай</a>
+                <a href="1.html"  style=" font-size: 16px; padding-top: 35px;">Мэдээлэл</a>
+                <a href="2.html"  style="font-size: 16px; padding-top: 35px;">Сэлбэг</a>
+                <a href="3.html"  style="font-size: 16px; padding-top: 35px;">Авто засвар</a>
+                <a href="4.html"  style=" font-size: 16px; padding-top: 35px;" >Инженерийн зөвөлгөө</a>
+                <a href="5.html"  style=" font-size: 16px; padding-top: 35px;">Хүний нөөц</a>
+                <a href="6.html"  style="font-size: 16px; padding-top: 35px;">Холбоо барих</a>
+                <input type="text" style="margin-top:38px; width:160px" placeholder="Search.." name="search">
+                <button type="submit" style=" width:20px; height: 18px; padding-bottom: 2px;"><i class="fa fa-search"></i></button>
+                  
+              </div>
+        
+        </div>
+
+    </div>
+
+
+
+
+    <div class="zovolgoo">
+        <h1 style="text-align: center; padding-top: 80px; padding-bottom: 50px; ">ИНЖЕНЕРИЙН ЗӨВЛӨГӨӨ</h1>
+       <a href="#"> <img src="./stat/image/Zurag-1-600x403.png"  class="img-rounded" alt="1"  style="width:  460px; height:  320px;margin-left: 100px; padding:10px 10px 10px 10px;" ></a>
+       <a href="#"> <img src="./stat/image/Zuwlumj3_Moment-600x403.jpg"  class="img-rounded" alt="1"  style="width:  460px; height:  320px; padding:10px 10px 10px 10px;" ></a>
+       <a href="#"> <img src="./stat/image/Prius-Center-Adive-4-EDITED_Moment-600x403.jpg"  class="img-rounded" alt="1"  style="width:  460px; height:  320px; padding:10px 10px 10px 10px;" ></a>
+       <a>
+       
+        <h5 style="float: left; padding-left: 580px;" >Инженерийн зөвлөгөө<br>
+          Бид Зөвлөж Байна – Цуврал #11<br>
+          БИД ЗӨВЛӨЖ БАЙНА #11 - ПРИУС 30 АВТОМАШИНЫ  <br>УРД 2 ДУГУЙГ
+          ХЭРХЭН ЗЭРЭГ ЗҮТГҮҮЛЭХ БУЮУ <br>TRC-ИЙГ ХЭРХЭН САЛГАХ ВЭ? <br>
+          1️⃣Асаах POWER товч дээр 2 удаа…</h5>
+          
+        
+        </a>
+    </div>
+
+
+
+        
+</body>
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</html>
